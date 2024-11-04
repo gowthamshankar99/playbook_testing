@@ -1,0 +1,7 @@
+---
+- name: Deploy nginx
+  hosts: web_servers
+  roles:
+    - role: sample-nginx-role
+      vars:
+        nginx_port: 8080
